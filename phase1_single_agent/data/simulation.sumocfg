@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+    <input>
+        <net-file value="paschimanchal.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+        <additional-files value="paschimanchal.poly.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="1.0"/>
+    </time>
+
+    <processing>
+        <time-to-teleport value="300"/>
+        <collision.action value="none"/>
+        <waiting-time-memory value="1000"/>
+    </processing>
+
+    <report>
+        <verbose value="false"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <gui-settings-file value="gui-settings.cfg"/>
+    </gui_only>
+</configuration>

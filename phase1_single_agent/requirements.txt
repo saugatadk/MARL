@@ -1,0 +1,14 @@
+# Phase 1: Single-Agent RL Traffic Signal Control Requirements
+# IOE Pashchimanchal Campus, Pokhara
+
+gymnasium>=0.29.0
+stable-baselines3>=2.0.0
+torch>=2.0.0
+tensorboard>=2.14.0
+traci>=1.18.0
+sumolib>=1.18.0
+pyproj>=3.5.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+requests>=2.28.0
+tqdm>=4.65.0

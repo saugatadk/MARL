@@ -1,0 +1,135 @@
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+# Note: Anchored or explicit names to avoid matching 'phase1_single_agent/env/'
+/venv/
+venv/
+/.venv/
+.venv/
+/ENV/
+ENV/
+/env/
+env.bak/
+venv.bak/
+
+# Packaging and distribution
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------------------------------------------------------------
+# 2. Reinforcement Learning Training Logs & Intermediates
+# ------------------------------------------------------------------------------
+# TensorBoard logs and run-time metrics
+phase1_single_agent/training/logs/**/events.out.tfevents.*
+phase1_single_agent/training/logs/**/monitor.csv
+*.tfevents.*
+monitor.csv
+
+# Intermediate training checkpoints (step checkpoints e.g., *_ckpt_*_steps.zip)
+phase1_single_agent/training/checkpoints/*_ckpt_*_steps.zip
+**/checkpoints/*_ckpt_*_steps.zip
+
+# Note: Final evaluated models (dqn_paschimanchal.zip, ppo_paschimanchal.zip)
+# are kept tracked (~780 KB total) so evaluation and demo scripts run out-of-the-box.
+# To ignore all model weights instead, uncomment the line below:
+# *.zip
+
+
+# Route alternatives generated dynamically by duarouter
+*.rou.alt.xml
+
+# Output & tripinfo metrics from simulation runs
+*tripinfo*.xml
+*emission*.xml
+*summary*.xml
+*queue*.xml
+*netstate*.xml
+*.sumo.log
+*.sumo.dump
+*.vehroute.xml
+
+# ------------------------------------------------------------------------------
+# 4. Testing, Code Quality & Notebooks
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------------------------
+# 5. Operating System & Local Artifacts
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.fuse_hidden*
+.Trash-*
+
+# ------------------------------------------------------------------------------
+# 6. IDEs and Editors
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.cursor/
+.project
+.pydevproject
+
+# ------------------------------------------------------------------------------
+# 7. Environment Variables & Secrets
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+!example.env
+
+# ------------------------------------------------------------------------------
+# 8. Temporary & Scratch Files
+# ------------------------------------------------------------------------------
+*.log
+tmp/
+temp/
+scratch/
